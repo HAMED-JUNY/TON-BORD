@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapitre 1 : Fonctions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li><a href="derivation.html">Chapitre 2 : Dérivation</a></li>
+      <li><a href="suites.html">Chapitre 3 : Suites numériques</a></li>
+      <li><a href="stats.html">Chapitre 4 : Statistiques</a></li>
+      <li><a href="probabilites.html">Chapitre 5 : Probabilités</a></li>
+      <li><a href="trigonometrie.html">Chapitre 6 : Trigonométrie</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Chapitre 1 : Fonctions</h1>
+    <p>Dans ce chapitre, nous allons explorer les **fonctions mathématiques**. Nous commencerons par leur définition, puis nous résoudrons plusieurs exercices pour mieux les comprendre.</p>
+  </header>
+
+  <main>
+    <h2>1. Définition d'une fonction</h2>
+    <p>Une fonction est une **relation** entre un ensemble d'éléments, appelés le **domaine**, et un autre ensemble d'éléments, appelés le **codomaine**. Chaque élément du domaine est associé à un seul élément du codomaine.</p>
+    <p>Une fonction est souvent notée : <strong>f(x)</strong>, où :</p>
+    <ul>
+      <li><strong>x</strong> : élément du domaine (aussi appelé l'argument de la fonction).</li>
+      <li><strong>f(x)</strong> : élément du codomaine (aussi appelé l'image de x par la fonction).</li>
+    </ul>
+    <p>Par exemple, si f(x) = 2x + 3, cela signifie que pour chaque valeur de <strong>x</strong>, la fonction f renvoie une valeur obtenue en multipliant x par 2, puis en ajoutant 3.</p>
+
+    <h3>Exemple de fonction</h3>
+    <p>Considérons la fonction <strong>f(x) = 2x + 3</strong>. Cela signifie que pour chaque valeur de <strong>x</strong>, nous multiplions <strong>x</strong> par 2, puis nous ajoutons 3 pour obtenir la valeur de <strong>f(x)</strong>.</p>
+
+    <h2>2. Exemples d'exercices</h2>
+    <p>Nous allons maintenant résoudre des exercices basés sur cette fonction.</p>
+
+    <!-- Exercice 1 -->
+    <h3>Exercice 1 : Calculer f(4)</h3>
+    <p>Dans cet exercice, vous devez calculer la valeur de <strong>f(4)</strong> pour la fonction <strong>f(x) = 2x + 3</strong>.</p>
+    <p><strong>Rappel de la formule : </strong> f(x) = 2x + 3</p>
+    <p><strong>Question :</strong> Quelle est la valeur de <strong>f(4)</strong> ?</p>
+    
+    <input type="number" id="reponse1" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice1()">Vérifier</button>
+
+    <div id="correction1" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <h3>Explication :</h3>
+    <p>Pour calculer f(4), il suffit de remplacer <strong>x</strong> par 4 dans la formule <strong>f(x) = 2x + 3</strong>.</p>
+    <p>On obtient : <strong>f(4) = 2 * 4 + 3 = 8 + 3 = 11</strong>. Donc, la réponse correcte est 11.</p>
+
+    <!-- Exercice 2 -->
+    <h3>Exercice 2 : Trouver l'image de 0</h3>
+    <p>Maintenant, calculons <strong>f(0)</strong> pour la fonction <strong>f(x) = 2x + 3</strong>.</p>
+    <p><strong>Rappel de la formule : </strong> f(x) = 2x + 3</p>
+    <p><strong>Question :</strong> Quelle est la valeur de <strong>f(0)</strong> ?</p>
+    
+    <input type="number" id="reponse2" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice2()">Vérifier</button>
+
+    <div id="correction2" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <h3>Explication :</h3>
+    <p>Pour calculer f(0), remplacez <strong>x</strong> par 0 dans la fonction <strong>f(x) = 2x + 3</strong>.</p>
+    <p>On obtient : <strong>f(0) = 2 * 0 + 3 = 0 + 3 = 3</strong>. Donc, la réponse correcte est 3.</p>
+
+    <!-- Exercice 3 -->
+    <h3>Exercice 3 : Résoudre l'équation f(x) = 11</h3>
+    <p>Résolvez l'équation suivante pour <strong>x</strong> : <strong>f(x) = 11</strong>.</p>
+    <p><strong>Fonction donnée : </strong> f(x) = 2x + 3.</p>
+    <p><strong>Question :</strong> Trouvez la valeur de <strong>x</strong> qui satisfait l'équation f(x) = 11.</p>
+    
+    <input type="number" id="reponse3" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice3()">Vérifier</button>
+
+    <div id="correction3" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <h3>Explication :</h3>
+    <p>Pour résoudre l'équation f(x) = 11, on remplace f(x) par l'expression de la fonction :</p>
+    <p>2x + 3 = 11.</p>
+    <p>Ensuite, on résout l'équation :</p>
+    <p>2x = 11 - 3 → 2x = 8 → x = 8 / 2 → x = 4.</p>
+    <p>Donc, la solution correcte est <strong>x = 4</strong>.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Répétiteur Première D – Créé avec ❤️ pour les élèves du Cameroun</p>
+  </footer>
+
+  <script src="exercices.js"></script>
+</body>
+</html>
