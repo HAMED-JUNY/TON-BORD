@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapitre 3 : Suites numériques</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li><a href="fonctions.html">Chapitre 1 : Fonctions</a></li>
+      <li><a href="derivation.html">Chapitre 2 : Dérivation</a></li>
+      <li><a href="stats.html">Chapitre 4 : Statistiques</a></li>
+      <li><a href="probabilites.html">Chapitre 5 : Probabilités</a></li>
+      <li><a href="trigonometrie.html">Chapitre 6 : Trigonométrie</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Chapitre 3 : Suites numériques</h1>
+    <p>Dans ce chapitre, nous allons étudier les **suites numériques**. Une suite numérique est une suite de nombres qui suivent une certaine règle. Nous verrons comment les définir, les calculer et résoudre des exercices pour mieux les comprendre.</p>
+  </header>
+
+  <main>
+    <h2>1. Définition d'une suite numérique</h2>
+    <p>Une **suite numérique** est une suite de nombres réels (ou entiers) indexée par les entiers naturels. Chaque nombre de la suite est appelé un **terme**.</p>
+    <p>La suite est généralement notée : <strong>(u<sub>n</sub>)</strong>, où <strong>n</strong> est l'indice du terme de la suite et <strong>u<sub>n</sub></strong> est la valeur du terme.</p>
+    <p>Exemple : La suite <strong>(u<sub>n</sub>)</strong> définie par u<sub>n</sub> = 2n + 1 est une suite arithmétique car la différence entre chaque terme est constante.</p>
+
+    <h3>Exemple de suite</h3>
+    <p>Considérons la suite définie par : <strong>u<sub>n</sub> = 2n + 1</strong>. Cela signifie que le premier terme est u<sub>1</sub> = 2(1) + 1 = 3, le deuxième terme est u<sub>2</sub> = 2(2) + 1 = 5, et ainsi de suite.</p>
+
+    <h2>2. Exemples d'exercices</h2>
+    <p>Nous allons maintenant résoudre des exercices basés sur cette suite.</p>
+
+    <!-- Exercice 1 -->
+    <h3>Exercice 1 : Calculer u<sub>4</sub></h3>
+    <p>Dans cet exercice, vous devez calculer le 4<sup>e</sup> terme de la suite définie par <strong>u<sub>n</sub> = 2n + 1</strong>.</p>
+    <p><strong>Rappel de la formule : </strong> u<sub>n</sub> = 2n + 1</p>
+    <p><strong>Question :</strong> Quelle est la valeur de u<sub>4</sub> ?</p>
+
+    <h3>Explication détaillée :</h3>
+    <p>Pour calculer u<sub>4</sub>, il suffit de remplacer <strong>n</strong> par 4 dans la formule de la suite :</p>
+    <p>u<sub>4</sub> = 2 * 4 + 1 = 8 + 1 = 9. Donc, la réponse correcte est u<sub>4</sub> = 9.</p>
+    
+    <input type="number" id="reponse1" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice1()">Vérifier</button>
+
+    <div id="correction1" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <!-- Exercice 2 -->
+    <h3>Exercice 2 : Calculer u<sub>10</sub></h3>
+    <p>Maintenant, calculons u<sub>10</sub> pour la suite définie par <strong>u<sub>n</sub> = 2n + 1</strong>.</p>
+    <p><strong>Rappel de la formule : </strong> u<sub>n</sub> = 2n + 1</p>
+    <p><strong>Question :</strong> Quelle est la valeur de u<sub>10</sub> ?</p>
+
+    <h3>Explication détaillée :</h3>
+    <p>Pour calculer u<sub>10</sub>, remplacez <strong>n</strong> par 10 dans la formule de la suite :</p>
+    <p>u<sub>10</sub> = 2 * 10 + 1 = 20 + 1 = 21. Donc, la réponse correcte est u<sub>10</sub> = 21.</p>
+    
+    <input type="number" id="reponse2" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice2()">Vérifier</button>
+
+    <div id="correction2" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <!-- Exercice 3 -->
+    <h3>Exercice 3 : Résoudre l'équation u<sub>n</sub> = 15</h3>
+    <p>Résolvez l'équation suivante pour <strong>n</strong> : <strong>u<sub>n</sub> = 15</strong>.</p>
+    <p><strong>Fonction donnée : </strong> u<sub>n</sub> = 2n + 1.</p>
+    <p><strong>Question :</strong> Trouvez la valeur de <strong>n</strong> qui satisfait l'équation u<sub>n</sub> = 15.</p>
+
+    <h3>Explication détaillée :</h3>
+    <p>Pour résoudre l'équation u<sub>n</sub> = 15, on remplace u<sub>n</sub> par l'expression de la suite :</p>
+    <p>2n + 1 = 15.</p>
+    <p>Ensuite, on résout l'équation :</p>
+    <p>2n = 15 - 1 → 2n = 14 → n = 14 / 2 → n = 7.</p>
+    <p>Donc, la solution correcte est <strong>n = 7</strong>.</p>
+
+    <input type="number" id="reponse3" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice3()">Vérifier</button>
+
+    <div id="correction3" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Répétiteur Première D – Créé avec ❤️ pour les élèves du Cameroun</p>
+  </footer>
+
+  <script src="exercices.js"></script>
+</body>
+</html>
