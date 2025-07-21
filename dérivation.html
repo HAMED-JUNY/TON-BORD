@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapitre 2 : Dérivation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li><a href="fonctions.html">Chapitre 1 : Fonctions</a></li>
+      <li><a href="suites.html">Chapitre 3 : Suites numériques</a></li>
+      <li><a href="stats.html">Chapitre 4 : Statistiques</a></li>
+      <li><a href="probabilites.html">Chapitre 5 : Probabilités</a></li>
+      <li><a href="trigonometrie.html">Chapitre 6 : Trigonométrie</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Chapitre 2 : Dérivation</h1>
+    <p>Dans ce chapitre, nous allons explorer le concept de **dérivation**, un outil fondamental en calcul différentiel. La dérivée permet de déterminer le taux de variation d’une fonction et est utilisée dans de nombreux domaines des mathématiques et des sciences appliquées.</p>
+  </header>
+
+  <main>
+    <h2>1. Définition de la dérivée</h2>
+    <p>La **dérivée** d'une fonction f(x) en un point x représente le taux de variation instantané de cette fonction au voisinage de x. En d’autres termes, c’est la pente de la tangente à la courbe de f(x) en ce point.</p>
+    <p>La dérivée de f(x) est souvent notée : <strong>f'(x)</strong> ou <strong>df/dx</strong>.</p>
+
+    <h3>Formules de dérivation courantes :</h3>
+    <ul>
+      <li>La dérivée de f(x) = x<sup>n</sup> est f'(x) = n * x<sup>n-1</sup>.</li>
+      <li>La dérivée de f(x) = c (constante) est f'(x) = 0.</li>
+      <li>La dérivée de f(x) = e<sup>x</sup> est f'(x) = e<sup>x</sup>.</li>
+    </ul>
+
+    <h2>2. Exemples d'exercices</h2>
+    <p>Nous allons maintenant résoudre des exercices basés sur la dérivation.</p>
+
+    <!-- Exercice 1 -->
+    <h3>Exercice 1 : Calculer la dérivée de f(x) = x<sup>2</sup></h3>
+    <p><strong>Question :</strong> Quelle est la dérivée de f(x) = x<sup>2</sup> ?</p>
+    
+    <h3>Explication détaillée :</h3>
+    <p>Pour calculer la dérivée de f(x) = x², on applique la règle :<br>
+      f'(x) = 2 * x<sup>2-1</sup> = 2x.
+    </p>
+    <p><strong>Réponse :</strong> La dérivée de f(x) = x² est f'(x) = 2x.</p>
+    
+    <input type="number" id="reponse1" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice1()">Vérifier</button>
+
+    <div id="correction1" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <!-- Exercice 2 -->
+    <h3>Exercice 2 : Calculer la dérivée de f(x) = 3x<sup>3</sup> + 5x - 2</h3>
+    <p><strong>Question :</strong> Quelle est la dérivée de f(x) = 3x<sup>3</sup> + 5x - 2 ?</p>
+    
+    <h3>Explication détaillée :</h3>
+    <p>Pour calculer la dérivée de f(x) = 3x³ + 5x - 2, on applique la règle de dérivation terme par terme :</p>
+    <ul>
+      <li>Pour 3x³ : f'(x) = 3 * 3 * x<sup>3-1</sup> = 9x²</li>
+      <li>Pour 5x : f'(x) = 5 * 1 * x<sup>1-1</sup> = 5</li>
+      <li>Pour -2 : f'(x) = 0 (la dérivée d'une constante est 0)</li>
+    </ul>
+    <p><strong>Réponse :</strong> La dérivée de f(x) = 3x³ + 5x - 2 est f'(x) = 9x² + 5.</p>
+    
+    <input type="number" id="reponse2" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice2()">Vérifier</button>
+
+    <div id="correction2" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+    <!-- Exercice 3 -->
+    <h3>Exercice 3 : Calculer la dérivée de f(x) = e<sup>x</sup></h3>
+    <p><strong>Question :</strong> Quelle est la dérivée de f(x) = e<sup>x</sup> ?</p>
+    
+    <h3>Explication détaillée :</h3>
+    <p>La dérivée de f(x) = e<sup>x</sup> est simplement f'(x) = e<sup>x</sup> car la fonction exponentielle reste inchangée après dérivation.</p>
+    <p><strong>Réponse :</strong> La dérivée de f(x) = e<sup>x</sup> est f'(x) = e<sup>x</sup>.</p>
+    
+    <input type="number" id="reponse3" placeholder="Entrez votre réponse">
+    <button onclick="corrigerExercice3()">Vérifier</button>
+
+    <div id="correction3" class="correction">
+      <!-- Correction s'affichera ici -->
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Répétiteur Première D – Créé avec ❤️ pour les élèves du Cameroun</p>
+  </footer>
+
+  <script src="exercices.js"></script>
+</body>
+</html>
